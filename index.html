@@ -1,0 +1,35 @@
+
+<!--Header file include-->
+<div include-html="header.html" id="header_file"></div>
+
+<!----Hero section-->
+<section class="Hero-section">
+    <div class="hero-wrapper"> 
+        <div class="hero-text-wrapper">
+            <div class="circlebackground"><span class="circle"></span></div>
+          <div class="hero-text">
+            <p>Best Solution</p>
+            <h2>Unlock Your <span>Digital</span><br>Potential</h2>
+                  
+        </div>
+        <button>Learn More</button>
+        </div>
+         <div class="circleanimation1"></div>
+     <div class="circleanimation2"></div>
+         <div class="circleanimation3"></div>
+         <div class="circleanimation4"></div>
+
+    </div>
+</section>  
+<section class="about">
+    <div class="about-left"></div>
+    <div class="about-right"></div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#header_file').load('Header.html');
+    $('#footer').load('footer.html');
+});
+    </script>
