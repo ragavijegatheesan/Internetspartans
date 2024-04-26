@@ -1,8 +1,37 @@
-
-<!--Header file include-->
-<div include-html="header.html" id="header_file"></div>
-
-<!----Hero section-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Internet Spartans</title>
+</head>
+<body>
+    
+    <header>
+        <div class="top-header">
+            <div class="col-1"><i class="fa fa-map-marker"></i>Internetspartans, coiambatore</div>
+            <div class="col-2"><i class="fa fa-envelope"></i>Spartantechnology@gmail.com</div>
+            <div class="col-3">  <i class="fa fa-phone"></i>+91 6384452136</div>
+        </div>
+       
+        <div class="main-header">
+            <div><img src="assets/logo.png" alt="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Demo</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            <button>Get Started Today</button>
+        </div>
+    </header>
+    <!----Hero section-->
 <section class="Hero-section">
     <div class="hero-wrapper"> 
         <div class="hero-text-wrapper">
@@ -20,17 +49,11 @@
          <div class="circleanimation4"></div>
 
     </div>
-</section>  
+</section>
+<!----About section-->  
 <section class="about">
     <div class="about-left"></div>
     <div class="about-right"></div>
 </section>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-
-<script>
-$(document).ready(function() {
-    $('#header_file').load('Header.html');
-    $('#footer').load('footer.html');
-});
-    </script>
+</body>
+</html>
