@@ -118,6 +118,33 @@ nav ul li a:hover{
     z-index: 1;
 
 }
+.hero-text .hr{
+    width: 80px;
+    height: 5px;
+    background-color: var(--blue);
+    margin: 10px 0px;
+}
+.hero-text hr
+{
+width: 5px;
+height: 5px;
+background-color: yellow;
+animation: heroline 5s linear infinite;
+border:none;
+}
+@keyframes heroline{
+    0% {
+        transform: translatex(0);
+    }
+  
+    50% {
+        transform: translatex(80px);
+    }
+  
+    100% {
+        transform: translatex(0);
+    }
+}
 .hero-text-wrapper{
   
     padding: 10% 5%;
