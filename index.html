@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Internet Spartans</title>
 </head>
+
 <body>
-    
+
     <header>
         <div class="top-header">
             <div class="col-1"><i class="fa fa-map-marker"></i>Internetspartans, coiambatore</div>
             <div class="col-2"><i class="fa fa-envelope"></i>Spartantechnology@gmail.com</div>
-            <div class="col-3">  <i class="fa fa-phone"></i>+91 6384452136</div>
+            <div class="col-3"> <i class="fa fa-phone"></i>+91 6384452136</div>
         </div>
-       
+
         <div class="main-header">
             <div><img src="assets/logo.png" alt="logo"></div>
             <nav>
@@ -25,38 +27,86 @@
                     <li><a href="#">Demo</a></li>
                     <li><a href="#">Service</a></li>
                     <li><a href="#">Contact</a></li>
-                    
+
                 </ul>
             </nav>
             <button>Get Started Today</button>
         </div>
     </header>
     <!----Hero section-->
-<section class="Hero-section">
-    <div class="hero-wrapper"> 
-        <div class="hero-text-wrapper">
-            <div class="circlebackground"><span class="circle"></span></div>
-          <div class="hero-text">
-            <p>Best Solution</p>
-            <div class="hr">
-                <hr>
-            </div>
-            <h2>Unlock Your <span>Digital</span><br>Potential</h2>
-                  
-        </div>
-        <button>Learn More</button>
-        </div>
-         <div class="circleanimation1"></div>
-     <div class="circleanimation2"></div>
-         <div class="circleanimation3"></div>
-         <div class="circleanimation4"></div>
+    <section class="Hero-section">
+        <div class="hero-wrapper">
+            <div class="hero-text-wrapper">
+                <div class="circlebackground"><span class="circle"></span></div>
+                <div class="hero-text">
+                    <p>Best Solution</p>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <h2>Unlock Your <span>Digital</span><br>Potential</h2>
 
-    </div>
-</section>
-<!----About section-->  
-<section class="about">
-    <div class="about-left"></div>
-    <div class="about-right"></div>
-</section>
+                </div>
+                <button>Learn More</button>
+            </div>
+            <div class="circleanimation1"></div>
+            <div class="circleanimation2"></div>
+            <div class="circleanimation3"></div>
+            <div class="circleanimation4"></div>
+
+        </div>
+    </section>
+    <!----About section-->
+    <section class="about">
+        <div class="about-left">
+            <img src="assets/digitalworld.png" alt="Image to Rotate" id="image" />
+            <div class="exprience">
+                <span class="count" id="counter">0</span>
+                <h3>Exprience</h3>
+            </div>
+        </div>
+        <div class="about-right">
+            <span>about us</span>
+            <hr class="zig"/>
+            <h3>Elevating Digital Presence</h3>
+            <p>At Internet Spartans,
+                 we craft immersive online solutions
+                  to elevate your brand's digital footprint.</p>
+                  <ul>
+                    <li>Crafting personalized digital solutions.</li>
+                    <li> Pioneering forward-thinking approaches.</li>
+                  </ul>
+                  <button>Know more</button>
+        </div>
+    </section>
+    <script>
+        const image = document.querySelector('.about img');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const rotateAmount = scrollTop / 5; // Adjust this value to control the rotation speed
+
+            image.style.transform = `rotate(${rotateAmount}deg)`;
+        });
+        //counter script
+
+        let count = 0;
+        let upto = 5;
+        let counts = setInterval(updateCounter, 100); // Set interval to 2 seconds (2000 milliseconds)
+
+        function updateCounter() {
+            const counterElement = document.getElementById('counter');
+            counterElement.innerHTML = count;
+            count++; // Increment count by 1
+
+            if (count > upto) {
+                clearInterval(counts); // Stop the interval when count reaches the desired value
+            }
+        }
+
+
+
+    </script>
+
 </body>
+
 </html>

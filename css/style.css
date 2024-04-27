@@ -47,7 +47,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 5px 40px;
-    display: flex;box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 nav ul{
     list-style: none;
@@ -89,8 +90,7 @@ nav ul li a:hover{
 
 .hero-wrapper{
    
-    background: linear-gradient(to right, #d7e8f8, transparent), url(../assets/herob.png);
-
+    background: linear-gradient(to right, #020626a8, transparent), url(../assets/herob.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -275,4 +275,93 @@ position: absolute;
     100% {
         transform: translatey(0);
     }
+}
+/*--about css----*/
+.about img {
+    width: 80%;
+    transition: transform 0.3s ease-in-out;
+    
+}
+.about-left{
+    flex:50%;
+    text-align: center;
+    position: relative;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #020626;
+}
+
+  
+
+ .exprience{
+    background-color: var(--white);
+  bottom: 10%;
+  right: 10%;
+    position: absolute;
+    z-index: 5;
+    padding: 30px;
+    display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+         line-height: 3rem;
+ }
+ .exprience .count{
+    font-size: 24px;
+    font-weight: bold;
+
+ }
+ .exprience:hover{
+    background-color: var(--blue);
+ }
+ .exprience h3{
+    font-size: 36px;
+    font-weight: bolder;
+ }
+ .exprience .count::after{
+    content: ' +';
+    vertical-align: bottom;
+ }
+ .about-right{
+    flex: 50%;
+    line-height: 2rem;
+    color: var(--white);
+    align-self: center;
+ }
+ .about-right span{
+    font-size: 16px;
+
+ }
+ .about-right hr{
+    height: 5px;
+    width: 5%;
+    border: none;
+    background-color: var(--blue);
+    margin: 10px 0px;
+ }
+.about-right h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0px;
+}
+.about-right p{
+    font-size: 18px;
+    font-weight: 100;
+}
+.about-right ul{
+    list-style: none;
+margin: 20px 0px;
+line-height: 3rem;
+}
+
+.about-right ul li::before{
+    content: '✓';
+    margin-right: 10px;
+    vertical-align: bottom;
+    color: var(--blue);
+}
+.about-right button{
+    background-image: linear-gradient(to bottom, #000 0%,#000 100%); 
 }
