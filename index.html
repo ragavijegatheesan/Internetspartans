@@ -79,6 +79,19 @@
                   <img src="assets/2151051310.jpg" alt="Image to Rotate" id="image1" />
         </div>
     </section>
+<!---service section-->
+<section class="services" id="servvice">
+    <img src="assets/html.png" class="html move" data-value="5" id="img-mover" alt="">
+    <img src="assets/css.png" class="css move" id="img-mover" data-value="10" alt="">
+    <img src="assets/bs.png" class="bs move" id="img-mover" data-value="10" alt="">
+    <img src="assets/js.png" class="js move" id="img-mover" data-value="10" alt="">
+    <img src="assets/react.png" class="react move" id="img-mover" data-value="10" alt="">
+    
+    <img src="assets/wp.png" class="wp move" id="img-mover" data-value="10" alt="">
+
+
+</section>
+   <!---javascript--> 
     <script>
         const image = document.querySelector('.about img');
 
@@ -103,6 +116,20 @@
                 clearInterval(counts); // Stop the interval when count reaches the desired value
             }
         }
+        //mosuemove service section
+       
+
+document.addEventListener("mousemove", function(e) {
+    document.querySelectorAll(".move").forEach(function(move){
+        var moving_value=move.getAttribute("data-value");
+        var x=(e.clientX * moving_value)/250;
+        var y=(e.clientY * moving_value)/250;
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+  
+ 
+});
+
 
 
 

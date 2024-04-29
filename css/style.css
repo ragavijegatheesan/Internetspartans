@@ -372,7 +372,7 @@ line-height: 3rem;
     right: -15%;
     animation: rotate 25s linear infinite;
     position: absolute;
-    width: 30%;
+    width: 25%;
     border-radius: 50%;
 }
 @keyframes rotate 
@@ -384,4 +384,56 @@ line-height: 3rem;
     transform:rotate(360deg);
     }
     
+}
+/*--- service section */
+.services{
+    background: url(../assets/service.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    position: relative;
+    padding:33% 5%;
+}
+.html{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    width: 10%; 
+
+}
+.css{
+    position: absolute;
+    right: 20%;
+    top: 30%;
+    width: 10%;
+}
+.js{
+    position: absolute;
+    right: 35%;
+    top: 10%;
+    width: 10%;
+}
+.bs{
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    width: 10%;
+}
+.react{
+    position: absolute;
+    right: 20%;
+    bottom: 28%;
+    width: 10%;
+}
+.wp{
+    position: absolute;
+    left: 20%;
+    bottom: 28%;
+    width: 10%;
+}
+.git{
+    position: absolute;
+    bottom: 1%;
+    left: 45%;
+    width: 10%;
 }
