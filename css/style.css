@@ -373,6 +373,7 @@ line-height: 3rem;
     animation: rotate 25s linear infinite;
     position: absolute;
     width: 30%;
+    border-radius: 50%;
 }
 @keyframes rotate 
 {
