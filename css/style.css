@@ -292,6 +292,8 @@ position: absolute;
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    overflow: hidden;
+    position: relative;
     background-color: #020626;
 }
 
@@ -364,4 +366,21 @@ line-height: 3rem;
 }
 .about-right button{
     background-image: linear-gradient(to bottom, #000 0%,#000 100%); 
+}
+#image1{
+    bottom:-5%;
+    right: -15%;
+    animation: rotate 25s linear infinite;
+    position: absolute;
+    width: 30%;
+}
+@keyframes rotate 
+{
+    from{
+    transform:rotate(0deg);
+    }
+  to {
+    transform:rotate(360deg);
+    }
+    
 }
